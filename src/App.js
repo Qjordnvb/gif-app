@@ -8,6 +8,7 @@ import Login from "pages/Login";
 import SearchResults from "pages/SearchResults";
 import Detail from "pages/Detail";
 import ErrorPage from "pages/ErrorPage";
+import LogoGiffy from './logo/logo.png'
 
 import { UserContextProvider } from "context/UserContext";
 import { GifsContextProvider } from "context/GifsContext";
@@ -25,7 +26,7 @@ export default function App() {
             <Header />
             <Link to="/">
               <figure className="App-logo">
-                <img alt="Giffy logo" src="/logo.png" />
+                <img alt="Giffy logo" src={LogoGiffy} />
               </figure>
             </Link>
             <GifsContextProvider>
